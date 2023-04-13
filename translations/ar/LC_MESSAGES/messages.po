@@ -73,7 +73,7 @@ msgstr "تم التصميم بواسطة"
 
 #: templates/template.html:28
 msgid "Lamma"
-msgstr "لمى"
+msgstr " لمى "
 
 #: templates/template.html:28
 msgid " and coded by "
@@ -81,7 +81,7 @@ msgstr "و كتابة الكود بواسطة"
 
 #: templates/template.html:28
 msgid "Kareem"
-msgstr "كريم"
+msgstr " كريم "
 
 #: templates/template.html:29
 msgid "Model created by "
@@ -89,13 +89,13 @@ msgstr "تم انشاء النوذج بواسطة"
 
 #: templates/template.html:29
 msgid "Emad"
-msgstr "عماد"
+msgstr " عماد "
 
 #: templates/template.html:29
 msgid " with the help of "
-msgstr "بمساعده"
+msgstr "بمساعدة"
 
 #: templates/template.html:29
 msgid "Abdelrahman"
-msgstr "عبدالرحمن"
+msgstr " عبدالرحمن "
 
