@@ -1,0 +1,7 @@
+Text Summarization Using Ridge Classifier
+
+Language: 
+
+English
+
+Arabic

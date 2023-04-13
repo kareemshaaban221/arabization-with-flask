@@ -1,0 +1,60 @@
+{% extends 'template.html' %}
+{% block body %}
+
+<!-- Start main panel -->
+<div class="container text-light mt-5">
+    <header>
+        <h1 class="text-center">{{_('Text Summarization Using Ridge Classifier')}}</h1>
+    </header>
+
+    <form action="/summarize?lang={{ 'en' if get_locale() != 'ar' else 'ar' }}" method="POST">
+        <div class="p-3 text-light rounded" id="table">
+            <div class="row p-4 border-bottom">
+                <label for="lang" class="font-weight-bold col-lg-2 col-6 m-0 my-auto">{{_('Language: ')}}</label>
+                <select name="lang" id="lang" onchange="redirect(this.value)"
+                    class="form-control shadow-none w-auto d-inline-block p-2 border-light col-lg-3 col-6 bg-transparent text-light">
+                    <option class="text-dark border-bottom border-light bg-transparent" value="en" {% if request.args.get('lang') != 'ar' %} selected {% endif %}>{{_('English')}}</option>
+                    <option class="text-dark border-bottom border-light bg-transparent" value="ar" {% if request.args.get('lang') == 'ar' %} selected {% endif %}>{{_('Arabic')}}</option>
+                </select>
+            </div>
+
+            <div class="row p-4 border-bottom">
+                <div class="col-6 border-right">
+                    <label for="original" class="font-weight-bold col m-0 my-auto p-0">{{_('Original: ')}}</label>
+                    <textarea class="form-control p-0 col mt-2 bg-transparent border-0 shadow-none display-3 text-light"
+                        name="original" id="original" rows="10" required
+                        placeholder="{{_('Write text you want to summarize here.')}}">{% if text_summary %}{{input_text}}{% endif %}</textarea>
+                </div>
+                <div class="col-6">
+                    <label for="summarize" class="font-weight-bold col m-0 my-auto p-0">{{_('Summarized: ')}}</label>
+                    <textarea class="form-control p-0 col mt-2 bg-transparent border-0 shadow-none display-3 text-light"
+                        disabled id="summarize" rows="10"
+                        placeholder="__________________________________________________________________________">{% if text_summary %}{{text_summary}}{% endif %}</textarea>
+                </div>
+            </div>
+
+            <div class="row p-4 font-weight-bold">
+                <div class="row col-6 border-right m-0">
+                    <div class="col-lg-6 col-12 my-auto text-center p-2">
+                        <label for="no_sent" class="mr-2">{{_('No. sentences')}}</label>
+                        <input type="number" id="no_sent" min="1" max="100" name="no_sent" required
+                            class="form-control shadow-none text-light bg-transparent w-auto d-inline-block" value="{% if text_summary %}{{no_sent}}{% else %}1{% endif %}">
+                    </div>
+                    <div class="col-lg-6 col-12 text-lg-right text-center p-2">
+                        <button class="btn bg-bink text-light shadow-none font-weight-bold"
+                            type="submit">{{_('Summarize')}}</button>
+                    </div>
+                </div>
+                <div class="col-6 my-auto font-weight-bold">
+                    <span id="no_sum_text">
+                        {% if text_summary %}{{ text_summary|length }}{% else %} 0 {% endif %}
+                    </span>
+                    <span> {{_('characters')}} </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- End main panel -->
+
+{% endblock %}

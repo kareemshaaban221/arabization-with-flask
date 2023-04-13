@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="HTML5 Is Just Responsive Template Theme" />
+    <meta name="keywords" content="HTML5" />
+    <meta name="author" content="Ali Nasser" />
+
+    <title>{{ page_title }}</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <!-- Main CSS Style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <!--Favicon-->
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+</head>
+
+<body>
+
+    {% block body %}
+    {% endblock %}
+
+    <footer class="mt-4 mb-4">
+        <h6 class="text-center text-secondary">{{_('Design created by ')}}<span class="font-weight-bold text-light">{{_('Lamma')}}</span>{{_(' and coded by ')}}<span class="font-weight-bold text-light">{{_('Kareem')}}</span></h6>
+        <h6 class="text-center text-secondary">{{_('Model created by ')}}<span class="font-weight-bold text-light">{{_('Emad')}}</span>{{_(' with the help of ')}}<span class="font-weight-bold text-light">{{_('Abdelrahman')}}</span></h6>
+    </footer>
+
+    <!-- jQuery Library -->
+    <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+    <!-- Popper Library -->
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <!-- Bootstrap Core JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- Nice Scroll JS -->
+    <script src="{{ url_for('static', filename='js/jquery.nicescroll.min.js') }}"></script>
+    <!-- Main Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

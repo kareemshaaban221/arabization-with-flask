@@ -1,0 +1,57 @@
+:root {
+  --color-theme-1: rgb(16,23,49);
+  --color-theme-2: rgb(101,68,245);
+  --color-theme-2-hover: rgb(78, 52, 194);
+  --color-theme-3: rgb(16,22,46);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-theme-2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-theme-2-hover);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif, Arial, Tahoma;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-theme-3);
+}
+
+#table {
+  background-color: var(--color-theme-1);
+  box-shadow: rgb(13, 20, 53) 0px 0px 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+.bg-bink {
+  background-color: var(--color-theme-2);
+}
+
+.bg-bink:hover {
+  background-color: var(--color-theme-2-hover);
+}
