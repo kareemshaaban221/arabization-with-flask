@@ -1,3 +1,3 @@
 function redirect(val) {
-    window.location.search = '?lang=' + val;
+    window.location = window.location.protocol + '//' + window.location.host + '?lang=' + val;
 }
