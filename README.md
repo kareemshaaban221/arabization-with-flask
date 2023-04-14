@@ -51,6 +51,7 @@ Scikit-learn is an open source machine learning library that supports supervised
 ### Flask Framework
 Flask is a popular Python web framework, meaning it is a third-party Python library used for developing web applications.
 - Install Flask on your machine ``` pip install Flask ```
+- Install Flask Babel library on your machine ``` pip install Flask-Babel ```
 
 # Usage
 To run this project make sure you have the required installation of Python, NLTK with it's data, urllib, bs4, pandas, Scikit-learn, and Flask framework then follow the steps given below:
