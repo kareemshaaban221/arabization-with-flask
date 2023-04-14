@@ -9,10 +9,10 @@ Natural Language Processing is the technology used to aid computers to understan
 ### Graphical User Interface
 The graphical user interface (GUI) is the point of human-computer interaction and communication in a device. This can include display screens, keyboards, a mouse and the appearance of a desktop. It is also the way through which a user interacts with an application or a website. The GUI of this application builded using web languages like ``` HTML ``` ``` CSS ``` ``` javascript ``` and this is how it look like:
 
-English UI:
+### English UI:
 <img src="https://github.com/kareemshaaban221/arabization-with-flask/blob/main/images/ui_en.png" width="1200">
 
-Arabic UI:
+### Arabic UI:
 <img src="https://github.com/kareemshaaban221/arabization-with-flask/blob/main/images/ui_ar.png" width="1200">
 
 # Knowledges required for this project
