@@ -13,8 +13,8 @@
                 <label for="lang" class="font-weight-bold col-lg-2 col-6 m-0 my-auto">{{_('Language: ')}}</label>
                 <select name="lang" id="lang" onchange="redirect(this.value)"
                     class="form-control shadow-none w-auto d-inline-block p-2 border-light col-lg-3 col-6 bg-transparent text-light">
-                    <option class="text-dark border-bottom border-light bg-transparent" value="en" {% if request.args.get('lang') != 'ar' %} selected {% endif %}>{{_('English')}}</option>
-                    <option class="text-dark border-bottom border-light bg-transparent" value="ar" {% if request.args.get('lang') == 'ar' %} selected {% endif %}>{{_('Arabic')}}</option>
+                    <option class="text-dark border-bottom border-light bg-transparent" value="en" {% if request.args.get('lang') != 'ar' %} selected {% endif %}>English</option>
+                    <option class="text-dark border-bottom border-light bg-transparent" value="ar" {% if request.args.get('lang') == 'ar' %} selected {% endif %}>العربية</option>
                 </select>
             </div>
 

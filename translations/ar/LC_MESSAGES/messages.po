@@ -35,14 +35,6 @@ msgstr "تلخيص النصوص باستخدام المصنف Ridge"
 msgid "Language: "
 msgstr "اللغة: "
 
-#: templates/index.html:16
-msgid "English"
-msgstr "الانجليزية"
-
-#: templates/index.html:18
-msgid "Arabic"
-msgstr "العربية"
-
 #: templates/index.html:24
 msgid "Original: "
 msgstr "النص الاصلي: "
