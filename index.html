@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="HTML5 Is Just Responsive Template Theme" />
+    <meta name="keywords" content="HTML5" />
+    <meta name="author" content="Ali Nasser" />
+
+    <title>Summarization</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Ion Icons -->
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <!-- Main CSS Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS Style -->
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+
+    <!-- Start main panel -->
+    <div class="container text-light mt-5">
+        <header>
+            <h1 class="text-center">Text Summarization Using Ridge Classifier</h1>
+        </header>
+
+        <div class="p-3 text-light rounded" id="table">
+            <div class="row p-4 border-bottom">
+                <label for="lang" class="font-weight-bold col-lg-2 col-6 m-0 my-auto">Language: </label>
+                <select name="lang" id="lang"
+                    class="form-control w-auto d-inline-block p-2 border-light col-lg-3 col-6 bg-transparent text-light">
+                    <option class="text-dark border-bottom border-light bg-transparent" value="">English</option>
+                    <option class="text-dark border-bottom border-light bg-transparent" value="">Arabic</option>
+                </select>
+            </div>
+
+            <div class="row p-4 border-bottom">
+                <div class="col-6 border-right">
+                    <label for="original" class="font-weight-bold col m-0 my-auto p-0">Original: </label>
+                    <textarea type="text" class="form-control p-0 col mt-2 bg-transparent border-0 shadow-none display-3 text-light" name="original"
+                        id="original" rows="10" placeholder="Write text you want to summarize here."></textarea>
+                </div>
+                <div class="col-6">
+                    <label for="summarize" class="font-weight-bold col m-0 my-auto p-0">Summarized: </label>
+                    <textarea type="text" class="form-control p-0 col mt-2 bg-transparent border-0 shadow-none display-3 text-light" disabled name="summarize"
+                        id="summarize" rows="10" placeholder="__________________________________________________________________________"></textarea>
+                </div>
+            </div>
+
+            <div class="row p-4 font-weight-bold">
+                <div class="row col-6 border-right m-0">
+                    <div class="col-lg-6 col-12 my-auto text-center p-2">
+                        <label for="no_sent" class="mr-2">No. sentences</label>
+                        <input type="number" id="no_sent" min="1" max="100" class="form-control shadow-none text-light bg-transparent w-auto d-inline-block" value="1">
+                    </div>
+                    <div class="col-lg-6 col-12 text-lg-right text-center p-2">
+                        <button class="btn bg-bink text-light shadow-none font-weight-bold">Summarize</button>
+                    </div>
+                </div>
+                <div class="col-6 my-auto font-weight-bold">
+                    <span id="no_sum_text"> 0 </span>
+                    <span> characters </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End main panel -->
+
+    <footer class="mt-4 mb-4">
+        <h6 class="text-center text-secondary">Design created by <span class="font-weight-bold text-light">Lamma</span> and coded by <span class="font-weight-bold text-light">Kareem</span></h6>
+        <h6 class="text-center text-secondary">Model created by <span class="font-weight-bold text-light">Emad</span> with the help of <span class="font-weight-bold text-light">Abdelrahman</span></h6>
+    </footer>
+
+    <!-- jQuery Library -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- Popper Library -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Core JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Nice Scroll JS -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <!-- Main Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
